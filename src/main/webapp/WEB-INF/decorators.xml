@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/decorators">
+	<decorator name="admin" page="admin.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+	<decorator name="user" page="user.jsp">
+		<pattern>/user/*</pattern>
+	</decorator>
+	<!-- Com a tag excludes é possível indicar quais urls não irão receber layout  -->
+	<excludes>
+		<pattern>*_format=json</pattern>
+		<pattern>*_format=xml</pattern>
+	</excludes>
+</decorators>
